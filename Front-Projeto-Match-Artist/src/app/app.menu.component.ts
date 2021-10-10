@@ -21,6 +21,7 @@ export class AppMenuComponent implements OnInit {
                 label: 'UI Kit', icon: 'pi pi-fw pi-star-o', routerLink: ['/uikit'], badge: 6,
                 items: [
                     {label: 'Form Layout', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/formlayout']},
+                    {label: 'Estabelecimentos Favoritos', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/ListarEstabelecimentosFavoritos']},
                     {label: 'Input', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/input']},
                     {label: 'Float Label', icon: 'pi pi-bookmark', routerLink: ['/uikit/floatlabel']},
                     {label: 'Invalid State', icon: 'pi pi-exclamation-circle', routerLink: ['/uikit/invalidstate']},

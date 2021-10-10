@@ -42,6 +42,7 @@ import { TipousuarioComponent } from './pages/tipousuario/tipousuario.component'
 import { CadArtistaComponent } from './pages/cad-artista/cad-artista.component';
 import { RecuperarSenhaComponent } from './pages/recuperar-senha/recuperar-senha.component';
 import { RecuperarSenha2Component } from './pages/recuperar-senha2/recuperar-senha2.component';
+import { ListarEstabelecimentosFavoritosComponent } from './pages/listar-estabelecimentos-favoritos/listar-estabelecimentos-favoritos.component';
 
 @NgModule({
     imports: [
@@ -50,6 +51,7 @@ import { RecuperarSenha2Component } from './pages/recuperar-senha2/recuperar-sen
                 path: '', component: AppMainComponent,
                 children: [
                     {path: '', component: DashboardDemoComponent},
+                    {path: 'uikit/ListarEstabelecimentosFavoritos', component: ListarEstabelecimentosFavoritosComponent},
                     {path: 'uikit/formlayout', component: FormLayoutDemoComponent},
                     {path: 'uikit/floatlabel', component: FloatLabelDemoComponent},
                     {path: 'uikit/invalidstate', component: InvalidStateDemoComponent},
@@ -92,6 +94,8 @@ import { RecuperarSenha2Component } from './pages/recuperar-senha2/recuperar-sen
             {path: 'cadArtista', component: CadArtistaComponent},
             {path: 'EsqueciMinhaSenha', component: RecuperarSenhaComponent},
             {path: 'EsqueciMinhaSenha2', component: RecuperarSenha2Component},
+            
+            
             {path: '**', redirectTo: '/notfound'},
         ], {scrollPositionRestoration: 'enabled'})
     ],

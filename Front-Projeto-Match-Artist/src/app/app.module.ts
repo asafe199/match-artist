@@ -155,6 +155,7 @@ import { TipousuarioComponent } from './pages/tipousuario/tipousuario.component'
 import { CadArtistaComponent } from './pages/cad-artista/cad-artista.component';
 import { RecuperarSenhaComponent } from './pages/recuperar-senha/recuperar-senha.component';
 import { RecuperarSenha2Component } from './pages/recuperar-senha2/recuperar-senha2.component';
+import { ListarEstabelecimentosFavoritosComponent } from './pages/listar-estabelecimentos-favoritos/listar-estabelecimentos-favoritos.component';
 
 FullCalendarModule.registerPlugins([
     dayGridPlugin,
@@ -305,6 +306,8 @@ FullCalendarModule.registerPlugins([
         CadArtistaComponent,
         RecuperarSenhaComponent,
         RecuperarSenha2Component,
+        ListarEstabelecimentosFavoritosComponent
+        
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},
