@@ -156,6 +156,7 @@ import { CadArtistaComponent } from './pages/cad-artista/cad-artista.component';
 import { RecuperarSenhaComponent } from './pages/recuperar-senha/recuperar-senha.component';
 import { RecuperarSenha2Component } from './pages/recuperar-senha2/recuperar-senha2.component';
 import { ListarEstabelecimentosFavoritosComponent } from './pages/listar-estabelecimentos-favoritos/listar-estabelecimentos-favoritos.component';
+import { ListarEstabelecimentosComponent } from './pages/listar-estabelecimentos/listar-estabelecimentos.component';
 
 FullCalendarModule.registerPlugins([
     dayGridPlugin,
@@ -306,7 +307,8 @@ FullCalendarModule.registerPlugins([
         CadArtistaComponent,
         RecuperarSenhaComponent,
         RecuperarSenha2Component,
-        ListarEstabelecimentosFavoritosComponent
+        ListarEstabelecimentosFavoritosComponent,
+        ListarEstabelecimentosComponent
         
     ],
     providers: [

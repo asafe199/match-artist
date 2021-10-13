@@ -43,6 +43,7 @@ import { CadArtistaComponent } from './pages/cad-artista/cad-artista.component';
 import { RecuperarSenhaComponent } from './pages/recuperar-senha/recuperar-senha.component';
 import { RecuperarSenha2Component } from './pages/recuperar-senha2/recuperar-senha2.component';
 import { ListarEstabelecimentosFavoritosComponent } from './pages/listar-estabelecimentos-favoritos/listar-estabelecimentos-favoritos.component';
+import { ListarEstabelecimentosComponent } from './pages/listar-estabelecimentos/listar-estabelecimentos.component';
 
 @NgModule({
     imports: [
@@ -52,6 +53,7 @@ import { ListarEstabelecimentosFavoritosComponent } from './pages/listar-estabel
                 children: [
                     {path: '', component: DashboardDemoComponent},
                     {path: 'uikit/ListarEstabelecimentosFavoritos', component: ListarEstabelecimentosFavoritosComponent},
+                    {path: 'uikit/ListarEstabelecimentos', component: ListarEstabelecimentosComponent},
                     {path: 'uikit/formlayout', component: FormLayoutDemoComponent},
                     {path: 'uikit/floatlabel', component: FloatLabelDemoComponent},
                     {path: 'uikit/invalidstate', component: InvalidStateDemoComponent},

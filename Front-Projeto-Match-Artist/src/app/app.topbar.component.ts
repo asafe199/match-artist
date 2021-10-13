@@ -91,7 +91,7 @@ import {AppMainComponent} from './app.main.component';
                 </li>
                 
                 <li #notifications [ngClass]="{'active-topmenuitem':appMain.activeTopbarItem === notifications}">
-                    <a href="#">
+                    <a href="/#/uikit/ListarEstabelecimentosFavoritos">
                         <i class="topbar-icon pi pi-heart"></i>
                         <span class="topbar-badge">4</span>
                         <span class="topbar-item-name">Notifications</span>

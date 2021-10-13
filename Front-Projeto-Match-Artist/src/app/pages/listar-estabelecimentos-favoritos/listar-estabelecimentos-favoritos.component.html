@@ -4,9 +4,9 @@
 				<h5>Estabelecimentos Favoritos</h5>
 
 				<div class="p-grid p-fluid">
-					<div class="p-col-12">
+					<div class="p-grid p-formgrid">
 					
-						<div class="p-grid p-formgrid">
+						
 							<div class="p-col-12 p-mb-2 p-lg-2 p-mb-lg-0">
 								<input type="text" pInputText placeholder="Nome">
 							</div>
@@ -77,8 +77,13 @@
 									<p-columnFilter type="date" field="date" display="menu" class="p-ml-auto"></p-columnFilter>
 								</div>
 							</th>
-							
-							
+							<th pSortableColumn="date">
+								<div class="p-d-flex p-jc-between p-ai-center">
+									Favoritar
+									<p-sortIcon field="date"></p-sortIcon>
+									<p-columnFilter type="date" field="date" display="menu" class="p-ml-auto"></p-columnFilter>
+								</div>
+							</th>
 							
 							<th style="width: 8rem"></th>
 						</tr>
@@ -139,6 +144,6 @@
 </div>
 
 
-</div>
+
 
 
