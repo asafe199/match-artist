@@ -32,8 +32,25 @@
 
 .div-botao{
   padding: 5px;
-    width: 8%;
+  width: 8%;
 }
+
+.div-botao2{
+  display:block;
+  margin-left: 10%;
+  margin-right: auto;
+  margin-top: -1%;
+  padding: 5px;
+  width: 12%;
+}
+
+.solicitacao-img{
+  width: 50%;
+  height: 50%;
+  margin-top: -25%;
+  margin-left: 5%;
+}
+
 
 /*END PROJETO MATCH ARTIST*/
 

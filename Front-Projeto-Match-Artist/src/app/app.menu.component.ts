@@ -20,8 +20,15 @@ export class AppMenuComponent implements OnInit {
             {
                 label: 'UI Kit', icon: 'pi pi-fw pi-star-o', routerLink: ['/uikit'], badge: 6,
                 items: [
-                    {label: 'Form Layout', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/formlayout']},
                     {label: 'Estabelecimentos Favoritos', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/ListarEstabelecimentosFavoritos']},
+                    {label: 'Estabelecimentos', icon: 'pi pi-fw pi-id-card', routerLink: ['uikit/ListarEstabelecimentos']},
+                    {label: 'Login', icon: 'pi pi-fw pi-id-card', routerLink: ['/login']},
+                    {label: 'Tipo Usuário', icon: 'pi pi-fw pi-id-card', routerLink: ['/tipousuario']},
+                    {label: 'Cadastro Artista', icon: 'pi pi-fw pi-id-card', routerLink: ['/cadArtista']},
+                    {label: 'EsqueciMinhaSenha', icon: 'pi pi-fw pi-id-card', routerLink: ['/EsqueciMinhaSenha']},
+                    {label: 'EsqueciMinhaSenha2', icon: 'pi pi-fw pi-id-card', routerLink: ['/EsqueciMinhaSenha2']},
+                    {label: 'Solicitar Artista Evento', icon: 'pi pi-fw pi-id-card', routerLink: ['uikit/SolicitarEvento']},
+                    {label: 'Form Layout', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/formlayout']},
                     {label: 'Input', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/input']},
                     {label: 'Float Label', icon: 'pi pi-bookmark', routerLink: ['/uikit/floatlabel']},
                     {label: 'Invalid State', icon: 'pi pi-exclamation-circle', routerLink: ['/uikit/invalidstate']},

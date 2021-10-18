@@ -44,6 +44,7 @@ import { RecuperarSenhaComponent } from './pages/recuperar-senha/recuperar-senha
 import { RecuperarSenha2Component } from './pages/recuperar-senha2/recuperar-senha2.component';
 import { ListarEstabelecimentosFavoritosComponent } from './pages/listar-estabelecimentos-favoritos/listar-estabelecimentos-favoritos.component';
 import { ListarEstabelecimentosComponent } from './pages/listar-estabelecimentos/listar-estabelecimentos.component';
+import { SolicitacaoDoArtistaParaEventoComponent } from './pages/solicitacao-do-artista-para-evento/solicitacao-do-artista-para-evento.component';
 
 @NgModule({
     imports: [
@@ -54,6 +55,7 @@ import { ListarEstabelecimentosComponent } from './pages/listar-estabelecimentos
                     {path: '', component: DashboardDemoComponent},
                     {path: 'uikit/ListarEstabelecimentosFavoritos', component: ListarEstabelecimentosFavoritosComponent},
                     {path: 'uikit/ListarEstabelecimentos', component: ListarEstabelecimentosComponent},
+                    {path: 'uikit/SolicitarEvento', component: SolicitacaoDoArtistaParaEventoComponent},
                     {path: 'uikit/formlayout', component: FormLayoutDemoComponent},
                     {path: 'uikit/floatlabel', component: FloatLabelDemoComponent},
                     {path: 'uikit/invalidstate', component: InvalidStateDemoComponent},
