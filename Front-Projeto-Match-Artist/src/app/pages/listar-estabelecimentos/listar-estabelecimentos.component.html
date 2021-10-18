@@ -7,20 +7,10 @@
                 <div class="p-grid p-formgrid">
                 
                     
+
                         <div class="p-col-12 p-mb-2 p-lg-2 p-mb-lg-0">
-                            <input type="text" pInputText placeholder="Nome">
-                        </div>
-                        <div class="p-col-12 p-mb-2 p-lg-2 p-mb-lg-0">
-                            <input type="text" pInputText placeholder="Nota"/>
-                        </div>
-                        <div class="p-col-12 p-mb-2 p-lg-2 p-mb-lg-0">
-                            <input type="text" pInputText placeholder="Situação"/>
-                        </div>
-                        <div class="p-col-12 p-mb-2 p-lg-2 p-mb-lg-0">
-                            <input type="text" pInputText placeholder="Cidade"/>
-                        </div>
-                        <div class="div-botao">
-                            <p-button label="Pesquisar" class="p-mr-2 p-mb-2"></p-button>
+                            <input pInputText type="text" 
+                       placeholder="Pesquisar"/>
                         </div>
                 
                         
@@ -40,13 +30,7 @@
                                 <p-columnFilter type="text" field="name" display="menu" class="p-ml-auto"></p-columnFilter>
                             </div>
                         </th>
-                        <th pSortableColumn="country.name">
-                            <div class="p-d-flex p-jc-between p-ai-center">
-                                Nota
-                                <p-sortIcon field="country.name"></p-sortIcon>
-                                <p-columnFilter type="text" field="country.name" display="menu" class="p-ml-auto"></p-columnFilter>
-                            </div>
-                        </th>
+                        
                         <th pSortableColumn="representative.name">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 Situação

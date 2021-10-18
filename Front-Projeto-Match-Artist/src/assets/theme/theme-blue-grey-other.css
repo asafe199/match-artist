@@ -35,21 +35,62 @@
   width: 8%;
 }
 
-.div-botao2{
+
+
+/** PERFIL ESTABELECIMENTO **/
+.div-botao3{
   display:block;
   margin-left: 10%;
   margin-right: auto;
   margin-top: -1%;
   padding: 5px;
   width: 12%;
+  display: inline-block;
+}
+
+.div-img1{
+  display: inline-block;
+  margin-left: 20%;
+  margin-bottom: 0%;
+  margin-top: -32%;
+}
+
+.solicitacao-img2{
+  max-width: 100%;
+  width: 450px;
+  height: 450px;
+  margin-top: 8%;
+  object-fit: contain;
+}
+
+/** SOLICITACAO DO ARTISTA PARA EVENTO **/
+.div-botao2{
+  display:block;
+  margin-left: 10%;
+  margin-right: auto;
+  margin-top: -40%;
+  padding: 5px;
+  width: 12%;
+  display: inline-block;
+}
+
+.solicitacao-artista-img{
+  display: inline-block;
+  margin-left: 20%;
+  margin-bottom: 0%;
+  margin-top: -46%;
+  
 }
 
 .solicitacao-img{
-  width: 50%;
-  height: 50%;
-  margin-top: -25%;
-  margin-left: 5%;
+  max-width: 100%;
+  width: 680px;
+  height: 680px;
+  margin-top: 0%;
+  object-fit: contain;
 }
+
+
 
 
 /*END PROJETO MATCH ARTIST*/

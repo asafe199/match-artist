@@ -158,6 +158,8 @@ import { RecuperarSenha2Component } from './pages/recuperar-senha2/recuperar-sen
 import { ListarEstabelecimentosFavoritosComponent } from './pages/listar-estabelecimentos-favoritos/listar-estabelecimentos-favoritos.component';
 import { ListarEstabelecimentosComponent } from './pages/listar-estabelecimentos/listar-estabelecimentos.component';
 import { SolicitacaoDoArtistaParaEventoComponent } from './pages/solicitacao-do-artista-para-evento/solicitacao-do-artista-para-evento.component';
+import { PerfilEstabelecimentoComponent } from './pages/perfil-estabelecimento/perfil-estabelecimento.component';
+import { SeilaComponent } from './pages/seila/seila.component';
 
 FullCalendarModule.registerPlugins([
     dayGridPlugin,
@@ -310,7 +312,9 @@ FullCalendarModule.registerPlugins([
         RecuperarSenha2Component,
         ListarEstabelecimentosFavoritosComponent,
         ListarEstabelecimentosComponent,
-        SolicitacaoDoArtistaParaEventoComponent
+        SolicitacaoDoArtistaParaEventoComponent,
+        PerfilEstabelecimentoComponent,
+        SeilaComponent
         
     ],
     providers: [
