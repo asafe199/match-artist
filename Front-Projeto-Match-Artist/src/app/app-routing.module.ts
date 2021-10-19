@@ -46,6 +46,7 @@ import { ListarEstabelecimentosFavoritosComponent } from './pages/listar-estabel
 import { ListarEstabelecimentosComponent } from './pages/listar-estabelecimentos/listar-estabelecimentos.component';
 import { SolicitacaoDoArtistaParaEventoComponent } from './pages/solicitacao-do-artista-para-evento/solicitacao-do-artista-para-evento.component';
 import { PerfilEstabelecimentoComponent } from './pages/perfil-estabelecimento/perfil-estabelecimento.component';
+import { EventosDoEstabelecimentoParaArtistaComponent } from './pages/eventos-do-estabelecimento-para-artista/eventos-do-estabelecimento-para-artista.component';
 
 @NgModule({
     imports: [
@@ -58,6 +59,7 @@ import { PerfilEstabelecimentoComponent } from './pages/perfil-estabelecimento/p
                     {path: 'uikit/ListarEstabelecimentos', component: ListarEstabelecimentosComponent},
                     {path: 'uikit/SolicitarEvento', component: SolicitacaoDoArtistaParaEventoComponent},
                     {path: 'uikit/PerfilEstabelecimento', component: PerfilEstabelecimentoComponent},
+                    {path: 'uikit/EventosDisponiveisDoEstabelecimento', component: EventosDoEstabelecimentoParaArtistaComponent},
                     {path: 'uikit/formlayout', component: FormLayoutDemoComponent},
                     {path: 'uikit/floatlabel', component: FloatLabelDemoComponent},
                     {path: 'uikit/invalidstate', component: InvalidStateDemoComponent},
