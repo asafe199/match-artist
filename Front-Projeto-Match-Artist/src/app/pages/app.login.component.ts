@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './app.login.component.html',
 })
 export class AppLoginComponent {
-  
+
 }
