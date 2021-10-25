@@ -29,6 +29,7 @@ export class AppMenuComponent implements OnInit {
                     {label: 'EsqueciMinhaSenha2', icon: 'pi pi-fw pi-id-card', routerLink: ['/EsqueciMinhaSenha2']},
                     {label: 'Solicitar Artista Evento', icon: 'pi pi-fw pi-id-card', routerLink: ['uikit/SolicitarEvento']},
                     {label: 'Perfil Estabelecimento', icon: 'pi pi-fw pi-id-card', routerLink: ['uikit/PerfilEstabelecimento']},
+                    {label: 'Eventos Disponiveis', icon: 'pi pi-fw pi-id-card', routerLink: ['uikit/EventosDisponiveisDoEstabelecimento']},
                     {label: 'Form Layout', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/formlayout']},
                     {label: 'Input', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/input']},
                     {label: 'Float Label', icon: 'pi pi-bookmark', routerLink: ['/uikit/floatlabel']},

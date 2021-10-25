@@ -23,8 +23,8 @@ import {AppMainComponent} from './app.main.component';
                             <img src="assets/layout/images/profile-image.png">
                         </div>
                         <div class="profile-info">
-                            <span class="topbar-item-name profile-name">Claire White</span>
-                            <span class="topbar-item-name profile-role">Admin</span>
+                            <span class="topbar-item-name profile-name">Artista</span>
+                            
                         </div>
                     </a>
 
