@@ -47,6 +47,8 @@ import { ListarEstabelecimentosComponent } from './pages/listar-estabelecimentos
 import { SolicitacaoDoArtistaParaEventoComponent } from './pages/solicitacao-do-artista-para-evento/solicitacao-do-artista-para-evento.component';
 import { PerfilEstabelecimentoComponent } from './pages/perfil-estabelecimento/perfil-estabelecimento.component';
 import { EventosDoEstabelecimentoParaArtistaComponent } from './pages/eventos-do-estabelecimento-para-artista/eventos-do-estabelecimento-para-artista.component';
+import { PerfilArtistaComponent } from './pages/perfil-artista/perfil-artista.component';
+import { CadEstabelecimentoComponent } from './pages/cad-estabelecimento/cad-estabelecimento.component';
 
 @NgModule({
     imports: [
@@ -60,6 +62,7 @@ import { EventosDoEstabelecimentoParaArtistaComponent } from './pages/eventos-do
                     {path: 'uikit/SolicitarEvento', component: SolicitacaoDoArtistaParaEventoComponent},
                     {path: 'uikit/PerfilEstabelecimento', component: PerfilEstabelecimentoComponent},
                     {path: 'uikit/EventosDisponiveisDoEstabelecimento', component: EventosDoEstabelecimentoParaArtistaComponent},
+                    {path: 'uikit/PerfilArtista', component: PerfilArtistaComponent},
                     {path: 'uikit/formlayout', component: FormLayoutDemoComponent},
                     {path: 'uikit/floatlabel', component: FloatLabelDemoComponent},
                     {path: 'uikit/invalidstate', component: InvalidStateDemoComponent},
@@ -100,6 +103,7 @@ import { EventosDoEstabelecimentoParaArtistaComponent } from './pages/eventos-do
             {path: 'login', component: AppLoginComponent},
             {path: 'tipousuario', component: TipousuarioComponent},
             {path: 'cadArtista', component: CadArtistaComponent},
+            {path: 'cadEstabelecimento', component: CadEstabelecimentoComponent},
             {path: 'EsqueciMinhaSenha', component: RecuperarSenhaComponent},
             {path: 'EsqueciMinhaSenha2', component: RecuperarSenha2Component},
             

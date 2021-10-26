@@ -18,7 +18,7 @@ export class AppMenuComponent implements OnInit {
         this.model = [
             {label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/']},
             {
-                label: 'UI Kit', icon: 'pi pi-fw pi-star-o', routerLink: ['/uikit'], badge: 6,
+                label: 'Telas Artista', icon: 'pi pi-fw pi-star-o', routerLink: ['/uikit'],
                 items: [
                     {label: 'Estabelecimentos Favoritos', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/ListarEstabelecimentosFavoritos']},
                     {label: 'Estabelecimentos', icon: 'pi pi-fw pi-id-card', routerLink: ['uikit/ListarEstabelecimentos']},
@@ -49,6 +49,14 @@ export class AppMenuComponent implements OnInit {
                 ]
             },
             {
+                label: 'Telas Estabelecimento', icon: 'pi pi-fw pi-star-o', routerLink: ['/uikit'], 
+                items: [
+                    {label: 'Perfil Artista', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/PerfilArtista']}
+                   
+                ]
+            },
+            
+            {
                 label: 'Utilities', icon: 'pi pi-fw pi-compass', routerLink: ['utilities'],
                 items: [
                     {label: 'Display', icon: 'pi pi-fw pi-desktop', routerLink: ['utilities/display']},
@@ -63,7 +71,7 @@ export class AppMenuComponent implements OnInit {
                 ]
             },
             {
-                label: 'Pages', icon: 'pi pi-fw pi-briefcase', routerLink: ['/pages'], badge: 8, badgeStyleClass: 'teal-badge',
+                label: 'Pages', icon: 'pi pi-fw pi-briefcase', routerLink: ['/pages'], badgeStyleClass: 'teal-badge',
                 items: [
                     {label: 'Crud', icon: 'pi pi-fw pi-pencil', routerLink: ['/pages/crud']},
                     {label: 'Calendar', icon: 'pi pi-fw pi-calendar-plus', routerLink: ['/pages/calendar']},
