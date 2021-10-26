@@ -161,6 +161,10 @@ import { SolicitacaoDoArtistaParaEventoComponent } from './pages/solicitacao-do-
 import { PerfilEstabelecimentoComponent } from './pages/perfil-estabelecimento/perfil-estabelecimento.component';
 import { SeilaComponent } from './pages/seila/seila.component';
 import { EventosDoEstabelecimentoParaArtistaComponent } from './pages/eventos-do-estabelecimento-para-artista/eventos-do-estabelecimento-para-artista.component';
+<<<<<<< Updated upstream
+=======
+import { PerfilArtistaComponent } from './pages/perfil-artista/perfil-artista.component';
+>>>>>>> Stashed changes
 
 FullCalendarModule.registerPlugins([
     dayGridPlugin,
