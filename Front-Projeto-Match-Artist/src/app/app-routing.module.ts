@@ -48,6 +48,7 @@ import { SolicitacaoDoArtistaParaEventoComponent } from "./pages/solicitacao-do-
 import { PerfilEstabelecimentoComponent } from "./pages/perfil-estabelecimento/perfil-estabelecimento.component";
 import { EventosDoEstabelecimentoParaArtistaComponent } from "./pages/eventos-do-estabelecimento-para-artista/eventos-do-estabelecimento-para-artista.component";
 import { PerfilArtistaComponent } from "./pages/perfil-artista/perfil-artista.component";
+import { CadEstabelecimentoComponent } from "./pages/cad-estabelecimento/cad-estabelecimento.component";
 @NgModule({
     imports: [
         RouterModule.forRoot(
@@ -76,6 +77,10 @@ import { PerfilArtistaComponent } from "./pages/perfil-artista/perfil-artista.co
                         {
                             path: "uikit/EventosDisponiveisDoEstabelecimento",
                             component: EventosDoEstabelecimentoParaArtistaComponent,
+                        },
+                        {
+                            path: "uikit/PerfilArtista",
+                            component: PerfilArtistaComponent,
                         },
                         {
                             path: "uikit/formlayout",
@@ -172,6 +177,10 @@ import { PerfilArtistaComponent } from "./pages/perfil-artista/perfil-artista.co
                 { path: "login", component: AppLoginComponent },
                 { path: "tipousuario", component: TipousuarioComponent },
                 { path: "cadArtista", component: CadArtistaComponent },
+                {
+                    path: "cadEstabelecimento",
+                    component: CadEstabelecimentoComponent,
+                },
                 {
                     path: "EsqueciMinhaSenha",
                     component: RecuperarSenhaComponent,

@@ -23,44 +23,162 @@ export class AppMenuComponent implements OnInit {
         this.model = [
             { label: "Dashboard", icon: "pi pi-fw pi-home", routerLink: ["/"] },
             {
-                label: "UI Kit",
+                label: "Telas Artista",
                 icon: "pi pi-fw pi-star-o",
                 routerLink: ["/uikit"],
-                badge: 6,
                 items: [
-                    {label: 'Estabelecimentos Favoritos', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/ListarEstabelecimentosFavoritos']},
-                    {label: 'Estabelecimentos', icon: 'pi pi-fw pi-id-card', routerLink: ['uikit/ListarEstabelecimentos']},
-                    {label: 'Login', icon: 'pi pi-fw pi-id-card', routerLink: ['/login']},
-                    {label: 'Tipo Usuário', icon: 'pi pi-fw pi-id-card', routerLink: ['/tipousuario']},
-                    {label: 'Cadastro Artista', icon: 'pi pi-fw pi-id-card', routerLink: ['/cadArtista']},
-                    {label: 'EsqueciMinhaSenha', icon: 'pi pi-fw pi-id-card', routerLink: ['/EsqueciMinhaSenha']},
-                    {label: 'EsqueciMinhaSenha2', icon: 'pi pi-fw pi-id-card', routerLink: ['/EsqueciMinhaSenha2']},
-                    {label: 'Solicitar Artista Evento', icon: 'pi pi-fw pi-id-card', routerLink: ['uikit/SolicitarEvento']},
-                    {label: 'Perfil Estabelecimento', icon: 'pi pi-fw pi-id-card', routerLink: ['uikit/PerfilEstabelecimento']},
-                    {label: 'Eventos Disponiveis', icon: 'pi pi-fw pi-id-card', routerLink: ['uikit/EventosDisponiveisDoEstabelecimento']},
-                    {label: 'Form Layout', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/formlayout']},
-                    {label: 'Input', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/input']},
-                    {label: 'Float Label', icon: 'pi pi-bookmark', routerLink: ['/uikit/floatlabel']},
-                    {label: 'Invalid State', icon: 'pi pi-exclamation-circle', routerLink: ['/uikit/invalidstate']},
-                    {label: 'Button', icon: 'pi pi-fw pi-mobile', routerLink: ['/uikit/button'], class: 'rotated-icon'},
-                    {label: 'Table', icon: 'pi pi-fw pi-table', routerLink: ['/uikit/table']},
-                    {label: 'List', icon: 'pi pi-fw pi-list', routerLink: ['/uikit/list']},
-                    {label: 'Tree', icon: 'pi pi-fw pi-share-alt', routerLink: ['/uikit/tree']},
-                    {label: 'Panel', icon: 'pi pi-fw pi-tablet', routerLink: ['/uikit/panel']},
-                    {label: 'Overlay', icon: 'pi pi-fw pi-clone', routerLink: ['/uikit/overlay']},
-                    {label: 'Media', icon: 'pi pi-fw pi-image', routerLink: ['/uikit/media']},
-                    {label: 'Menu', icon: 'pi pi-fw pi-bars', routerLink: ['/uikit/menu']},
-                    {label: 'Message', icon: 'pi pi-fw pi-comment', routerLink: ['/uikit/message']},
-                    {label: 'File', icon: 'pi pi-fw pi-file', routerLink: ['/uikit/file']},
-                    {label: 'Chart', icon: 'pi pi-fw pi-chart-bar', routerLink: ['/uikit/charts']},
-                    {label: 'Misc', icon: 'pi pi-fw pi-circle-off', routerLink: ['/uikit/misc']}
-                ]
+                    {
+                        label: "Estabelecimentos Favoritos",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["/uikit/ListarEstabelecimentosFavoritos"],
+                    },
+                    {
+                        label: "Estabelecimentos",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["uikit/ListarEstabelecimentos"],
+                    },
+                    {
+                        label: "Login",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["/login"],
+                    },
+                    {
+                        label: "Tipo Usuário",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["/tipousuario"],
+                    },
+                    {
+                        label: "Cadastro Artista",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["/cadArtista"],
+                    },
+                    {
+                        label: "EsqueciMinhaSenha",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["/EsqueciMinhaSenha"],
+                    },
+                    {
+                        label: "EsqueciMinhaSenha2",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["/EsqueciMinhaSenha2"],
+                    },
+                    {
+                        label: "Solicitar Artista Evento",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["uikit/SolicitarEvento"],
+                    },
+                    {
+                        label: "Perfil Estabelecimento",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["uikit/PerfilEstabelecimento"],
+                    },
+                    {
+                        label: "Eventos Disponiveis",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: [
+                            "uikit/EventosDisponiveisDoEstabelecimento",
+                        ],
+                    },
+                    {
+                        label: "Form Layout",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["/uikit/formlayout"],
+                    },
+                    {
+                        label: "Input",
+                        icon: "pi pi-fw pi-check-square",
+                        routerLink: ["/uikit/input"],
+                    },
+                    {
+                        label: "Float Label",
+                        icon: "pi pi-bookmark",
+                        routerLink: ["/uikit/floatlabel"],
+                    },
+                    {
+                        label: "Invalid State",
+                        icon: "pi pi-exclamation-circle",
+                        routerLink: ["/uikit/invalidstate"],
+                    },
+                    {
+                        label: "Button",
+                        icon: "pi pi-fw pi-mobile",
+                        routerLink: ["/uikit/button"],
+                        class: "rotated-icon",
+                    },
+                    {
+                        label: "Table",
+                        icon: "pi pi-fw pi-table",
+                        routerLink: ["/uikit/table"],
+                    },
+                    {
+                        label: "List",
+                        icon: "pi pi-fw pi-list",
+                        routerLink: ["/uikit/list"],
+                    },
+                    {
+                        label: "Tree",
+                        icon: "pi pi-fw pi-share-alt",
+                        routerLink: ["/uikit/tree"],
+                    },
+                    {
+                        label: "Panel",
+                        icon: "pi pi-fw pi-tablet",
+                        routerLink: ["/uikit/panel"],
+                    },
+                    {
+                        label: "Overlay",
+                        icon: "pi pi-fw pi-clone",
+                        routerLink: ["/uikit/overlay"],
+                    },
+                    {
+                        label: "Media",
+                        icon: "pi pi-fw pi-image",
+                        routerLink: ["/uikit/media"],
+                    },
+                    {
+                        label: "Menu",
+                        icon: "pi pi-fw pi-bars",
+                        routerLink: ["/uikit/menu"],
+                    },
+                    {
+                        label: "Message",
+                        icon: "pi pi-fw pi-comment",
+                        routerLink: ["/uikit/message"],
+                    },
+                    {
+                        label: "File",
+                        icon: "pi pi-fw pi-file",
+                        routerLink: ["/uikit/file"],
+                    },
+                    {
+                        label: "Chart",
+                        icon: "pi pi-fw pi-chart-bar",
+                        routerLink: ["/uikit/charts"],
+                    },
+                    {
+                        label: "Misc",
+                        icon: "pi pi-fw pi-circle-off",
+                        routerLink: ["/uikit/misc"],
+                    },
+                ],
             },
             {
-                label: "Paginas",
+                label: "Telas Estabelecimento",
                 icon: "pi pi-fw pi-star-o",
-                routerLink: ["/pages"],
-                badge: 6,
+                routerLink: ["/uikit"],
+                items: [
+                    {
+                        label: "Perfil Artista",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["/uikit/PerfilArtista"],
+                    },
+                ],
+            },
+
+            {
+                label: "Utilities",
+                icon: "pi pi-fw pi-compass",
+                routerLink: ["utilities"],
                 items: [
                     {
                         label: "Pagina",
@@ -70,9 +188,10 @@ export class AppMenuComponent implements OnInit {
                 ],
             },
             {
-                label: "Utilities",
-                icon: "pi pi-fw pi-compass",
-                routerLink: ["utilities"],
+                label: "Pages",
+                icon: "pi pi-fw pi-briefcase",
+                routerLink: ["/pages"],
+                badgeStyleClass: "teal-badge",
                 items: [
                     {
                         label: "Display",
