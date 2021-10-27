@@ -63,7 +63,7 @@ export class AppMenuComponent implements OnInit {
                         routerLink: ["/EsqueciMinhaSenha2"],
                     },
                     {
-                        label: "Solicitar Artista Evento",
+                        label: "Solicitar do Artista para o Evento",
                         icon: "pi pi-fw pi-id-card",
                         routerLink: ["uikit/SolicitarEvento"],
                     },
@@ -73,11 +73,21 @@ export class AppMenuComponent implements OnInit {
                         routerLink: ["uikit/PerfilEstabelecimento"],
                     },
                     {
-                        label: "Eventos Confirmados",
+                        label: "Eventos Disponiveis de Algum Estabelecimento",
                         icon: "pi pi-fw pi-id-card",
                         routerLink: [
                             "uikit/EventosDisponiveisDoEstabelecimento",
                         ],
+                    },
+                    {
+                        label: "Solicitações Pendentes",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["/uikit/SolicitacoesPendentes"],
+                    },
+                    {
+                        label: "Eventos Confirmados",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["/uikit/EventosConfirmados"],
                     },
                     {
                         label: "Form Layout",
@@ -176,12 +186,8 @@ export class AppMenuComponent implements OnInit {
                         label: "Cadastro Estabelecimento",
                         icon: "pi pi-fw pi-id-card",
                         routerLink: ["cadEstabelecimento"],
-                    },
-                    {
-                        label: "Solicitações Pendentes",
-                        icon: "pi pi-fw pi-id-card",
-                        routerLink: ["/uikit/SolicitacoesPendentes"],
-                    },
+                    }
+                    
                 ],
             },
 

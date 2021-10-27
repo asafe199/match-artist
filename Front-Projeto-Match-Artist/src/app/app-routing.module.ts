@@ -50,6 +50,7 @@ import { EventosDoEstabelecimentoParaArtistaComponent } from "./pages/eventos-do
 import { PerfilArtistaComponent } from "./pages/perfil-artista/perfil-artista.component";
 import { CadEstabelecimentoComponent } from "./pages/cad-estabelecimento/cad-estabelecimento.component";
 import { EventosEstabelecimentoComponent } from "./pages/eventos-estabelecimento/eventos-estabelecimento.component";
+import { EventosConfirmadosComponent } from "./pages/eventos-confirmados/eventos-confirmados.component";
 @NgModule({
     imports: [
         RouterModule.forRoot(
@@ -86,6 +87,10 @@ import { EventosEstabelecimentoComponent } from "./pages/eventos-estabelecimento
                         {
                             path: "uikit/SolicitacoesPendentes",
                             component: EventosEstabelecimentoComponent,
+                        },
+                        {
+                            path: "uikit/EventosConfirmados",
+                            component: EventosConfirmadosComponent,
                         },
                         {
                             path: "uikit/formlayout",
