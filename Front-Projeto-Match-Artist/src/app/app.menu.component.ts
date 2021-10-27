@@ -73,7 +73,7 @@ export class AppMenuComponent implements OnInit {
                         routerLink: ["uikit/PerfilEstabelecimento"],
                     },
                     {
-                        label: "Eventos Disponiveis",
+                        label: "Eventos Confirmados",
                         icon: "pi pi-fw pi-id-card",
                         routerLink: [
                             "uikit/EventosDisponiveisDoEstabelecimento",
@@ -171,6 +171,16 @@ export class AppMenuComponent implements OnInit {
                         label: "Perfil Artista",
                         icon: "pi pi-fw pi-id-card",
                         routerLink: ["/uikit/PerfilArtista"],
+                    },
+                    {
+                        label: "Cadastro Estabelecimento",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["cadEstabelecimento"],
+                    },
+                    {
+                        label: "Solicitações Pendentes",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["/uikit/SolicitacoesPendentes"],
                     },
                 ],
             },

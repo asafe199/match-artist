@@ -1,7 +1,7 @@
 <div class="p-grid table-demo">
     <div class="p-col-12">
         <div class="card">
-            <h5>Eventos do Bahrem</h5>
+            <h5>Eventos Confirmados</h5>
 
             <div class="p-grid p-fluid">
                 <div class="p-grid p-formgrid">
@@ -26,6 +26,13 @@
                         <th pSortableColumn="name">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 ID
+                                <p-sortIcon field="name"></p-sortIcon>
+                                <p-columnFilter type="text" field="name" display="menu" class="p-ml-auto"></p-columnFilter>
+                            </div>
+                        </th>
+                        <th pSortableColumn="name">
+                            <div class="p-d-flex p-jc-between p-ai-center">
+                                Nome
                                 <p-sortIcon field="name"></p-sortIcon>
                                 <p-columnFilter type="text" field="name" display="menu" class="p-ml-auto"></p-columnFilter>
                             </div>

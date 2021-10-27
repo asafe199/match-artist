@@ -163,6 +163,7 @@ import { SeilaComponent } from "./pages/seila/seila.component";
 import { EventosDoEstabelecimentoParaArtistaComponent } from "./pages/eventos-do-estabelecimento-para-artista/eventos-do-estabelecimento-para-artista.component";
 import { PerfilArtistaComponent } from "./pages/perfil-artista/perfil-artista.component";
 import { CadEstabelecimentoComponent } from "./pages/cad-estabelecimento/cad-estabelecimento.component";
+import { EventosEstabelecimentoComponent } from './pages/eventos-estabelecimento/eventos-estabelecimento.component';
 
 FullCalendarModule.registerPlugins([
     dayGridPlugin,
@@ -321,6 +322,7 @@ FullCalendarModule.registerPlugins([
         EventosDoEstabelecimentoParaArtistaComponent,
         PerfilArtistaComponent,
         CadEstabelecimentoComponent,
+        EventosEstabelecimentoComponent,
     ],
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },
