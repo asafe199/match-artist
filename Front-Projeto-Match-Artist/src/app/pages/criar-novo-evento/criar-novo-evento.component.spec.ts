@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SeilaComponent } from './seila.component';
+import { CriarNovoEventoComponent } from './criar-novo-evento.component';
 
-describe('SeilaComponent', () => {
-  let component: SeilaComponent;
-  let fixture: ComponentFixture<SeilaComponent>;
+describe('CriarNovoEventoComponent', () => {
+  let component: CriarNovoEventoComponent;
+  let fixture: ComponentFixture<CriarNovoEventoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SeilaComponent ]
+      declarations: [ CriarNovoEventoComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SeilaComponent);
+    fixture = TestBed.createComponent(CriarNovoEventoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

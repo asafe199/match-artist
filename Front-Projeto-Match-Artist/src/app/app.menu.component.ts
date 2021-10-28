@@ -186,7 +186,23 @@ export class AppMenuComponent implements OnInit {
                         label: "Cadastro Estabelecimento",
                         icon: "pi pi-fw pi-id-card",
                         routerLink: ["cadEstabelecimento"],
+                    },
+                    {
+                        label: "Estabelecimentos Confirmados",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["/uikit/EventosConfirmadosTelaEstabelecimento"],
+                    },
+                    {
+                        label: "Meus Eventos",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["/uikit/MeusEventosdeEstabelecimento"],
+                    },
+                    {
+                        label: "Criar Novo Evento",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["/uikit/CriarNovoEvento"],
                     }
+                    
                     
                 ],
             },

@@ -159,13 +159,14 @@ import { ListarEstabelecimentosFavoritosComponent } from "./pages/listar-estabel
 import { ListarEstabelecimentosComponent } from "./pages/listar-estabelecimentos/listar-estabelecimentos.component";
 import { SolicitacaoDoArtistaParaEventoComponent } from "./pages/solicitacao-do-artista-para-evento/solicitacao-do-artista-para-evento.component";
 import { PerfilEstabelecimentoComponent } from "./pages/perfil-estabelecimento/perfil-estabelecimento.component";
-import { SeilaComponent } from "./pages/seila/seila.component";
 import { EventosDoEstabelecimentoParaArtistaComponent } from "./pages/eventos-do-estabelecimento-para-artista/eventos-do-estabelecimento-para-artista.component";
 import { PerfilArtistaComponent } from "./pages/perfil-artista/perfil-artista.component";
 import { CadEstabelecimentoComponent } from "./pages/cad-estabelecimento/cad-estabelecimento.component";
 import { EventosEstabelecimentoComponent } from './pages/eventos-estabelecimento/eventos-estabelecimento.component';
 import { EventosConfirmadosComponent } from './pages/eventos-confirmados/eventos-confirmados.component';
-
+import { EstabelecimentosConfirmadosComponent } from './pages/estabelecimentos-confirmados/estabelecimentos-confirmados.component';
+import { MeusEventosDeEstabelecimentoComponent } from './pages/meus-eventos-de-estabelecimento/meus-eventos-de-estabelecimento.component';
+import { CriarNovoEventoComponent } from './pages/criar-novo-evento/criar-novo-evento.component';
 FullCalendarModule.registerPlugins([
     dayGridPlugin,
     timeGridPlugin,
@@ -319,12 +320,14 @@ FullCalendarModule.registerPlugins([
         ListarEstabelecimentosComponent,
         SolicitacaoDoArtistaParaEventoComponent,
         PerfilEstabelecimentoComponent,
-        SeilaComponent,
         EventosDoEstabelecimentoParaArtistaComponent,
         PerfilArtistaComponent,
         CadEstabelecimentoComponent,
         EventosEstabelecimentoComponent,
         EventosConfirmadosComponent,
+        EstabelecimentosConfirmadosComponent,
+        MeusEventosDeEstabelecimentoComponent,
+        CriarNovoEventoComponent        
     ],
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },

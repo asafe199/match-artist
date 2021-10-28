@@ -1,0 +1,83 @@
+<div class="p-grid table-demo">
+    <div class="p-col-12">
+        <div class="card">
+            <h5>Eventos Pendentes</h5>
+
+            <div class="p-grid p-fluid">
+                <div class="p-grid p-formgrid">
+                
+                    
+
+                        <div class="p-col-12 p-mb-2 p-lg-2 p-mb-lg-0">
+                            <input pInputText type="text" 
+                       placeholder="Pesquisar"/>
+                        </div>
+                
+                        
+            <p-table #dt  dataKey="id"
+                     styleClass="p-datatable-customers" [rowHover]="true" [rows]="10" [paginator]="true"
+                     [filterDelay]="0" [globalFilterFields]="['name','country.name','representative.name','status']">
+                
+
+
+                <ng-template pTemplate="header">
+                    <tr>
+                        
+                        <th pSortableColumn="name">
+                            <div class="p-d-flex p-jc-between p-ai-center">
+                                ID
+                                <p-sortIcon field="name"></p-sortIcon>
+                                <p-columnFilter type="text" field="name" display="menu" class="p-ml-auto"></p-columnFilter>
+                            </div>
+                        </th>
+                        <th pSortableColumn="name">
+                            <div class="p-d-flex p-jc-between p-ai-center">
+                                NOME ARTISTA
+                                <p-sortIcon field="name"></p-sortIcon>
+                                <p-columnFilter type="text" field="name" display="menu" class="p-ml-auto"></p-columnFilter>
+                            </div>
+                        </th>
+                        <th pSortableColumn="name">
+                            <div class="p-d-flex p-jc-between p-ai-center">
+                                DATA
+                                <p-sortIcon field="name"></p-sortIcon>
+                                <p-columnFilter type="text" field="name" display="menu" class="p-ml-auto"></p-columnFilter>
+                            </div>
+                        </th>
+                        <th pSortableColumn="name">
+                            <div class="p-d-flex p-jc-between p-ai-center">
+                                HORÁRIO
+                                <p-sortIcon field="name"></p-sortIcon>
+                                <p-columnFilter type="text" field="name" display="menu" class="p-ml-auto"></p-columnFilter>
+                            </div>
+                        </th>
+                        <th pSortableColumn="name">
+                            <div class="p-d-flex p-jc-between p-ai-center">
+                                BUTTON (AÇÃO CONFIRMAR || RECUSAR)
+                                <p-sortIcon field="name"></p-sortIcon>
+                                <p-columnFilter type="text" field="name" display="menu" class="p-ml-auto"></p-columnFilter>
+                            </div>
+                        </th>
+                        
+                        
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-customer>
+                    
+                </ng-template>
+                <ng-template pTemplate="emptymessage">
+                    <tr>
+                        <td colspan="8">No customers found.</td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    </div>
+</div>		
+</div>
+</div>
+
+
+
+
+
