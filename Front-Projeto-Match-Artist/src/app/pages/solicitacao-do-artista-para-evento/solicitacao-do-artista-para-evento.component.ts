@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { CountryService } from 'src/app/demo/service/countryservice';
 
 @Component({
-  selector: 'app-solicitacao-do-artista-para-evento',
-  templateUrl: './solicitacao-do-artista-para-evento.component.html',
-  styleUrls: ['./solicitacao-do-artista-para-evento.component.scss']
+    selector: 'app-solicitacao-do-artista-para-evento',
+    templateUrl: './solicitacao-do-artista-para-evento.component.html',
+    styleUrls: ['./solicitacao-do-artista-para-evento.component.scss']
 })
 export class SolicitacaoDoArtistaParaEventoComponent implements OnInit {
 
-  countries: any[];
+    countries: any[];
 
     cities: any[];
 
@@ -40,11 +40,11 @@ export class SolicitacaoDoArtistaParaEventoComponent implements OnInit {
 
     constructor(private countryService: CountryService) {
         this.cities = [
-            {name: 'New York', code: 'NY'},
-            {name: 'Rome', code: 'RM'},
-            {name: 'London', code: 'LDN'},
-            {name: 'Istanbul', code: 'IST'},
-            {name: 'Paris', code: 'PRS'}
+            { name: 'New York', code: 'NY' },
+            { name: 'Rome', code: 'RM' },
+            { name: 'London', code: 'LDN' },
+            { name: 'Istanbul', code: 'IST' },
+            { name: 'Paris', code: 'PRS' }
         ];
     }
 

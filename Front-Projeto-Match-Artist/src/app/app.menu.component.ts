@@ -188,7 +188,7 @@ export class AppMenuComponent implements OnInit {
                         routerLink: ["cadEstabelecimento"],
                     },
                     {
-                        label: "Estabelecimentos Confirmados",
+                        label: "Eventos Confirmados",
                         icon: "pi pi-fw pi-id-card",
                         routerLink: ["/uikit/EventosConfirmadosTelaEstabelecimento"],
                     },
@@ -201,7 +201,22 @@ export class AppMenuComponent implements OnInit {
                         label: "Criar Novo Evento",
                         icon: "pi pi-fw pi-id-card",
                         routerLink: ["/uikit/CriarNovoEvento"],
-                    }
+                    },
+                    {
+                        label: "Listar Artistas",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["uikit/ListarArtistas"],
+                    },
+                    {
+                        label: "Proposta do Artista Para o Estabelecimento",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["uikit/PropostaDoArtistaParaOEstabelecimento"],
+                    },
+                    {
+                        label: "Listar Artistas Favoritos",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["uikit/ListarArtistasFavoritos"],
+                    },
                     
                     
                 ],

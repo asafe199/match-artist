@@ -54,6 +54,10 @@ import { EventosConfirmadosComponent } from "./pages/eventos-confirmados/eventos
 import { EstabelecimentosConfirmadosComponent } from "./pages/estabelecimentos-confirmados/estabelecimentos-confirmados.component";
 import { MeusEventosDeEstabelecimentoComponent } from "./pages/meus-eventos-de-estabelecimento/meus-eventos-de-estabelecimento.component";
 import { CriarNovoEventoComponent } from "./pages/criar-novo-evento/criar-novo-evento.component";
+import { ListarArtistasComponent } from "./pages/listar-artistas/listar-artistas.component";
+import { PropostaDoEstabelecimentoParaOArtistaComponent } from "./pages/proposta-do-estabelecimento-para-o-artista/proposta-do-estabelecimento-para-o-artista.component";
+import { ListarArtistasFavoritosComponent } from "./pages/listar-artistas-favoritos/listar-artistas-favoritos.component";
+
 @NgModule({
     imports: [
         RouterModule.forRoot(
@@ -107,7 +111,18 @@ import { CriarNovoEventoComponent } from "./pages/criar-novo-evento/criar-novo-e
                             path: "uikit/CriarNovoEvento",
                             component: CriarNovoEventoComponent,
                         },
-                        
+                        {
+                            path: "uikit/ListarArtistas",
+                            component: ListarArtistasComponent,
+                        },
+                        {
+                            path: "uikit/PropostaDoArtistaParaOEstabelecimento",
+                            component: PropostaDoEstabelecimentoParaOArtistaComponent,
+                        },                        
+                        {
+                            path: "uikit/ListarArtistasFavoritos",
+                            component: ListarArtistasFavoritosComponent,
+                        },                        
                         {
                             path: "uikit/formlayout",
                             component: FormLayoutDemoComponent,
