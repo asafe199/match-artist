@@ -63,11 +63,7 @@ export class AppMenuComponent implements OnInit {
                         routerLink: ["/EsqueciMinhaSenha2"],
                     },
                     {
-<<<<<<< Updated upstream
                         label: "Solicitar do Artista para o Evento",
-=======
-                        label: "Solicitar Artista Evento",
->>>>>>> Stashed changes
                         icon: "pi pi-fw pi-id-card",
                         routerLink: ["uikit/SolicitarEvento"],
                     },
@@ -77,18 +73,13 @@ export class AppMenuComponent implements OnInit {
                         routerLink: ["uikit/PerfilEstabelecimento"],
                     },
                     {
-<<<<<<< Updated upstream
                         label: "Eventos Disponiveis de Algum Estabelecimento",
-=======
-                        label: "Eventos Disponiveis",
->>>>>>> Stashed changes
                         icon: "pi pi-fw pi-id-card",
                         routerLink: [
                             "uikit/EventosDisponiveisDoEstabelecimento",
                         ],
                     },
                     {
-<<<<<<< Updated upstream
                         label: "Solicitações Pendentes",
                         icon: "pi pi-fw pi-id-card",
                         routerLink: ["/uikit/SolicitacoesPendentes"],
@@ -99,8 +90,6 @@ export class AppMenuComponent implements OnInit {
                         routerLink: ["/uikit/EventosConfirmados"],
                     },
                     {
-=======
->>>>>>> Stashed changes
                         label: "Form Layout",
                         icon: "pi pi-fw pi-id-card",
                         routerLink: ["/uikit/formlayout"],
@@ -192,7 +181,6 @@ export class AppMenuComponent implements OnInit {
                         label: "Perfil Artista",
                         icon: "pi pi-fw pi-id-card",
                         routerLink: ["/uikit/PerfilArtista"],
-<<<<<<< Updated upstream
                     },
                     {
                         label: "Cadastro Estabelecimento",
@@ -202,7 +190,9 @@ export class AppMenuComponent implements OnInit {
                     {
                         label: "Eventos Confirmados",
                         icon: "pi pi-fw pi-id-card",
-                        routerLink: ["/uikit/EventosConfirmadosTelaEstabelecimento"],
+                        routerLink: [
+                            "/uikit/EventosConfirmadosTelaEstabelecimento",
+                        ],
                     },
                     {
                         label: "Meus Eventos",
@@ -222,17 +212,15 @@ export class AppMenuComponent implements OnInit {
                     {
                         label: "Proposta do Artista Para o Estabelecimento",
                         icon: "pi pi-fw pi-id-card",
-                        routerLink: ["uikit/PropostaDoArtistaParaOEstabelecimento"],
+                        routerLink: [
+                            "uikit/PropostaDoArtistaParaOEstabelecimento",
+                        ],
                     },
                     {
                         label: "Listar Artistas Favoritos",
                         icon: "pi pi-fw pi-id-card",
                         routerLink: ["uikit/ListarArtistasFavoritos"],
-=======
->>>>>>> Stashed changes
                     },
-                    
-                    
                 ],
             },
 
