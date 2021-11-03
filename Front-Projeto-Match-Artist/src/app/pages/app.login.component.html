@@ -1,11 +1,13 @@
 <div class="login-body">
     <div class="login-panel p-fluid">
         <div class="p-grid p-nogutter">
-            <div class="p-col-12 login-header">
-                <h1>MATCH ARTIST</h1>
-                <h2>LOGIN</h2>
-                <img src="assets/layout/images/logo.png">   
+            <div class="login-header">
+                <div class="box">
+                    <tr> <img src="assets/layout/images/logo.png"></tr>
+                </div>
             </div>
+        </div>
+        <div class="p-grid p-nogutter">
             <div class="p-col-12">
                 <span class="p-float-label">
                     <input type="text" pInputText>
@@ -15,9 +17,11 @@
                     <input type="text" pInputText>
                     <label>Senha</label>
                 </span>
-                <button pButton type="button" onclick="location.href='/#/EsqueciMinhaSenha';" label="Esqueci minha senha" class="p-button-link"></button>
-                <button pButton type="button"  label="Entrar" icon="pi pi-user"></button><br><br>
-                <button onclick="location.href='/#/tipousuario';" pButton type="button"  label="Criar Conta" icon="pi pi-user" ></button>
+                <button pButton type="button" onclick="location.href='/#/EsqueciMinhaSenha';"
+                    label="Esqueci minha senha" class="p-button-link"></button>
+                <button class="btnEntrar" pButton type="button" label="ENTRAR"></button><br><br>
+                <button onclick="location.href='/#/tipousuario';" pButton type="button" label="Criar Conta"
+                    icon="pi pi-user"></button>
             </div>
         </div>
     </div>

@@ -564,8 +564,8 @@
 }
 .login-body .login-panel .login-header {
   margin-bottom: 30px;
-  background-color: #1976d2;
-  color: #BBDEFB;
+  background-color: #607E33;
+  color: rgb(11, 46, 75);
   position: relative;
 }
 .login-body .login-panel .login-header h1 {
@@ -600,7 +600,7 @@
     padding-top: 150px;
   }
   .login-body .login-panel {
-    width: 300px;
+    width: 400px;
   }
   .login-body .login-panel .p-col-12 {
     padding: 20px 35px;

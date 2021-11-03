@@ -82,7 +82,7 @@ export class AppConfigComponent implements OnInit {
     ngOnInit() {
         this.themes = [
             {label: 'blue', color: '#1976d2'},
-            {label: 'blue-grey', color: '#607D8B'},
+            {label: 'blue-grey', color: '#04052'},
             {label: 'cyan', color: '#0097a7'},
             {label: 'dark-blue', color: '#3e464c'},
             {label: 'dark-green', color: '#2f4050'},

@@ -162,6 +162,7 @@ import { PerfilEstabelecimentoComponent } from "./pages/perfil-estabelecimento/p
 import { EventosDoEstabelecimentoParaArtistaComponent } from "./pages/eventos-do-estabelecimento-para-artista/eventos-do-estabelecimento-para-artista.component";
 import { PerfilArtistaComponent } from "./pages/perfil-artista/perfil-artista.component";
 import { CadEstabelecimentoComponent } from "./pages/cad-estabelecimento/cad-estabelecimento.component";
+<<<<<<< Updated upstream
 import { EventosEstabelecimentoComponent } from './pages/eventos-estabelecimento/eventos-estabelecimento.component';
 import { EventosConfirmadosComponent } from './pages/eventos-confirmados/eventos-confirmados.component';
 import { EstabelecimentosConfirmadosComponent } from './pages/estabelecimentos-confirmados/estabelecimentos-confirmados.component';
@@ -170,6 +171,8 @@ import { CriarNovoEventoComponent } from './pages/criar-novo-evento/criar-novo-e
 import { ListarArtistasComponent } from './pages/listar-artistas/listar-artistas.component';
 import { PropostaDoEstabelecimentoParaOArtistaComponent } from './pages/proposta-do-estabelecimento-para-o-artista/proposta-do-estabelecimento-para-o-artista.component';
 import { ListarArtistasFavoritosComponent } from './pages/listar-artistas-favoritos/listar-artistas-favoritos.component';
+=======
+>>>>>>> Stashed changes
 
 FullCalendarModule.registerPlugins([
     dayGridPlugin,
@@ -329,6 +332,7 @@ FullCalendarModule.registerPlugins([
         EventosDoEstabelecimentoParaArtistaComponent,
         PerfilArtistaComponent,
         CadEstabelecimentoComponent,
+<<<<<<< Updated upstream
         EventosEstabelecimentoComponent,
         EventosConfirmadosComponent,
         EstabelecimentosConfirmadosComponent,
@@ -337,6 +341,8 @@ FullCalendarModule.registerPlugins([
         ListarArtistasComponent,
         PropostaDoEstabelecimentoParaOArtistaComponent,
         ListarArtistasFavoritosComponent
+=======
+>>>>>>> Stashed changes
     ],
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },
