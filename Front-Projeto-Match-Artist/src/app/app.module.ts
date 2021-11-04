@@ -162,14 +162,14 @@ import { PerfilEstabelecimentoComponent } from "./pages/perfil-estabelecimento/p
 import { EventosDoEstabelecimentoParaArtistaComponent } from "./pages/eventos-do-estabelecimento-para-artista/eventos-do-estabelecimento-para-artista.component";
 import { PerfilArtistaComponent } from "./pages/perfil-artista/perfil-artista.component";
 import { CadEstabelecimentoComponent } from "./pages/cad-estabelecimento/cad-estabelecimento.component";
-import { EventosEstabelecimentoComponent } from './pages/eventos-estabelecimento/eventos-estabelecimento.component';
-import { EventosConfirmadosComponent } from './pages/eventos-confirmados/eventos-confirmados.component';
-import { EstabelecimentosConfirmadosComponent } from './pages/estabelecimentos-confirmados/estabelecimentos-confirmados.component';
-import { MeusEventosDeEstabelecimentoComponent } from './pages/meus-eventos-de-estabelecimento/meus-eventos-de-estabelecimento.component';
-import { CriarNovoEventoComponent } from './pages/criar-novo-evento/criar-novo-evento.component';
-import { ListarArtistasComponent } from './pages/listar-artistas/listar-artistas.component';
-import { PropostaDoEstabelecimentoParaOArtistaComponent } from './pages/proposta-do-estabelecimento-para-o-artista/proposta-do-estabelecimento-para-o-artista.component';
-import { ListarArtistasFavoritosComponent } from './pages/listar-artistas-favoritos/listar-artistas-favoritos.component';
+import { EventosEstabelecimentoComponent } from "./pages/eventos-estabelecimento/eventos-estabelecimento.component";
+import { EventosConfirmadosComponent } from "./pages/eventos-confirmados/eventos-confirmados.component";
+import { EstabelecimentosConfirmadosComponent } from "./pages/estabelecimentos-confirmados/estabelecimentos-confirmados.component";
+import { MeusEventosDeEstabelecimentoComponent } from "./pages/meus-eventos-de-estabelecimento/meus-eventos-de-estabelecimento.component";
+import { CriarNovoEventoComponent } from "./pages/criar-novo-evento/criar-novo-evento.component";
+import { ListarArtistasComponent } from "./pages/listar-artistas/listar-artistas.component";
+import { PropostaDoEstabelecimentoParaOArtistaComponent } from "./pages/proposta-do-estabelecimento-para-o-artista/proposta-do-estabelecimento-para-o-artista.component";
+import { ListarArtistasFavoritosComponent } from "./pages/listar-artistas-favoritos/listar-artistas-favoritos.component";
 
 FullCalendarModule.registerPlugins([
     dayGridPlugin,
@@ -264,8 +264,6 @@ FullCalendarModule.registerPlugins([
         TreeTableModule,
         VirtualScrollerModule,
         AppCodeModule,
-        
-        
     ],
     declarations: [
         AppComponent,
@@ -336,7 +334,7 @@ FullCalendarModule.registerPlugins([
         CriarNovoEventoComponent,
         ListarArtistasComponent,
         PropostaDoEstabelecimentoParaOArtistaComponent,
-        ListarArtistasFavoritosComponent
+        ListarArtistasFavoritosComponent,
     ],
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },
@@ -351,6 +349,4 @@ FullCalendarModule.registerPlugins([
     ],
     bootstrap: [AppComponent],
 })
-export class AppModule {
-
-}
+export class AppModule {}

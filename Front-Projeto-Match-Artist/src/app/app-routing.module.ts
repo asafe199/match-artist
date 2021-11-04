@@ -118,11 +118,11 @@ import { ListarArtistasFavoritosComponent } from "./pages/listar-artistas-favori
                         {
                             path: "uikit/PropostaDoArtistaParaOEstabelecimento",
                             component: PropostaDoEstabelecimentoParaOArtistaComponent,
-                        },                        
+                        },
                         {
                             path: "uikit/ListarArtistasFavoritos",
                             component: ListarArtistasFavoritosComponent,
-                        },                        
+                        },
                         {
                             path: "uikit/formlayout",
                             component: FormLayoutDemoComponent,

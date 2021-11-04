@@ -190,7 +190,9 @@ export class AppMenuComponent implements OnInit {
                     {
                         label: "Eventos Confirmados",
                         icon: "pi pi-fw pi-id-card",
-                        routerLink: ["/uikit/EventosConfirmadosTelaEstabelecimento"],
+                        routerLink: [
+                            "/uikit/EventosConfirmadosTelaEstabelecimento",
+                        ],
                     },
                     {
                         label: "Meus Eventos",
@@ -210,15 +212,15 @@ export class AppMenuComponent implements OnInit {
                     {
                         label: "Proposta do Artista Para o Estabelecimento",
                         icon: "pi pi-fw pi-id-card",
-                        routerLink: ["uikit/PropostaDoArtistaParaOEstabelecimento"],
+                        routerLink: [
+                            "uikit/PropostaDoArtistaParaOEstabelecimento",
+                        ],
                     },
                     {
                         label: "Listar Artistas Favoritos",
                         icon: "pi pi-fw pi-id-card",
                         routerLink: ["uikit/ListarArtistasFavoritos"],
                     },
-                    
-                    
                 ],
             },
 

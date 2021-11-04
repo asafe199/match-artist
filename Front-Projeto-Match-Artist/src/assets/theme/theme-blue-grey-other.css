@@ -27,7 +27,7 @@
   background-color: #607D8B;
   width: 5%;
   margin-left: 37%;
-  
+
 }
 
 .div-botao{
@@ -83,7 +83,7 @@
   margin-left: 20%;
   margin-bottom: 0%;
   margin-top: -44%;
-  
+
 }
 
 .solicitacao-img{
@@ -948,7 +948,7 @@ p-inputswitch.ng-dirty.ng-invalid > .p-inputswitch {
 .p-inputtext {
   font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
   font-size: 1rem;
-  color: #000001;
+  color: #010000;
   background: #ffffff;
   padding: 1rem 1rem;
   border: 1px solid rgba(0, 0, 0, 0.38);
@@ -1582,7 +1582,7 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
 
 .p-button {
   color: #ffffff;
-  background: #607D8B;
+  background: #070a36;
   border: 0 none;
   padding: 0.714rem 1rem;
   font-size: 1rem;
@@ -1590,28 +1590,28 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
   border-radius: 4px;
 }
 .p-button:enabled:hover {
-  background: rgba(96, 125, 139, 0.92);
+  background-color: #031d42;
   color: #ffffff;
   border-color: transparent;
 }
 .p-button:enabled:active {
-  background: rgba(96, 125, 139, 0.68);
+  background:#031D4F;
   color: #ffffff;
   border-color: transparent;
 }
 .p-button.p-button-outlined {
-  background-color: transparent;
-  color: #607D8B;
+  background-color: #031D4F;
+  color: #031D4F;
   border: 1px solid;
 }
 .p-button.p-button-outlined:enabled:hover {
-  background: rgba(96, 125, 139, 0.04);
-  color: #607D8B;
+  background:#031D4F;
+  color: #031D4F;
   border: 1px solid;
 }
 .p-button.p-button-outlined:enabled:active {
-  background: rgba(96, 125, 139, 0.16);
-  color: #607D8B;
+  background: #031D4F;
+  color: #031D4F;
   border: 1px solid;
 }
 .p-button.p-button-outlined.p-button-plain {
@@ -1719,6 +1719,8 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
 .p-fluid .p-button {
   width: 100%;
 }
+
+
 .p-fluid .p-button-icon-only {
   width: 3rem;
 }
@@ -2024,13 +2026,13 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
 }
 
 .p-button.p-button-link {
-  color: #607D8B;
+  color: #070a36;
   background: transparent;
   border: transparent;
 }
 .p-button.p-button-link:enabled:hover {
   background: transparent;
-  color: #607D8B;
+  color: #042B75;
   border-color: transparent;
 }
 .p-button.p-button-link:enabled:hover .p-button-label {
