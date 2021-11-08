@@ -1,4 +1,4 @@
-package com.matchartist;
+package com.matchartist.matchartist;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
