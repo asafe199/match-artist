@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-cad-artista',
-  templateUrl: './cad-artista.component.html',
-  styleUrls: ['./cad-artista.component.scss']
+    selector: "app-cad-artista",
+    templateUrl: "./cad-artista.component.html",
+    styleUrls: ["./cad-artista.component.css"],
 })
 export class CadArtistaComponent implements OnInit {
+    constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+    ngOnInit(): void {}
 }

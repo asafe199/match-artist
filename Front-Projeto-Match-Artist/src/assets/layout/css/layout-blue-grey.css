@@ -552,8 +552,12 @@
   padding-top: 200px;
   height: 100vh;
   width: 100vw;
-  background-position: 100% 100%;
+  background-position: center;
   background-repeat: no-repeat;
+}
+.login-body .login-panel .label{
+  margin-left: 20px;
+  height: 71px;
 }
 .login-body .login-panel {
   background-color: #ffffff;
@@ -561,11 +565,25 @@
   opacity: 0.9;
   width: 400px;
   margin: auto;
-  padding-bottom: 20px;
   -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+
+.login-body .form-cad-artist  {
+    background-color: #ffffff;
+    padding: 35px 30px;
+    border-radius: 10px;
+    opacity: 0.9;
+    width: 400px;
+    margin: auto;
+    padding-bottom: 20px;
+    -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
 .login-body .login-panel .login-header {
     background-color: #070a36;
     height: 150px;
@@ -580,7 +598,10 @@
   padding: 20px 30px;
 }
 .login-body .login-panel .p-col-12 {
-  padding: 35px 30px;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px;
 }
 
 .exception-body {
