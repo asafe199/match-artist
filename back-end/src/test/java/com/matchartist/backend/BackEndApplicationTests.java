@@ -1,10 +1,10 @@
-package com.matchartistback.matchartistback;
+package com.matchartist.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MatchArtistBackApplicationTests {
+class BackEndApplicationTests {
 
 	@Test
 	void contextLoads() {
