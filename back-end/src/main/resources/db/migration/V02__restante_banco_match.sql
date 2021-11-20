@@ -32,7 +32,7 @@ foreign key(fk_status_conta)references status_conta(id)
 create table estabelecimento(
 id integer auto_increment not null unique,
 nome_estabelecimento varchar(200) not null,
-uuid integer not null,
+uuid integer,
 url_avatar varchar(300),
 contato integer not null,
 descricao varchar(300),

@@ -1,12 +1,21 @@
+CREATE TABLE regiao (
+ id integer not null auto_increment unique,
+ nome_regiao varchar(75) NOT NULL,
+ PRIMARY KEY(id)
+);
+
 create table uf(
 id integer auto_increment not null unique,
-name_uf varchar(2) unique,
-PRIMARY KEY(id)
+name_uf varchar(20) not null unique,
+uf varchar(2) not null unique,
+fk_regiao integer not null,
+PRIMARY KEY(id),
+foreign key(fk_regiao)references regiao(id)
 );
 
 create table cidade(
 id integer auto_increment not null unique,
-name_cidade varchar(50),
+name_cidade varchar(50) not null  ,
 fk_uf integer not null,
 PRIMARY KEY(id),
 foreign key(fk_uf)references uf(id)
