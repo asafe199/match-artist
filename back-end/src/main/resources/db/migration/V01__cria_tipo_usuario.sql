@@ -23,7 +23,7 @@ foreign key(fk_uf)references uf(id)
 
 create table endereco(
 id integer auto_increment not null unique,
-logradouro varchar(100) unique,
+logradouro varchar(100),
 numero integer,
 complemento varchar(100),
 cep integer,
