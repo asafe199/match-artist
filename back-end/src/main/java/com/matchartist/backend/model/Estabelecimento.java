@@ -41,6 +41,10 @@ public class Estabelecimento {
 	@JoinColumn(name = "fk_status_conta")
 	private Usuario fkStatusConta;
 	
+	@ManyToOne
+	@JoinColumn(name = "fk_endereco")
+	private Usuario fkEndereco;
+	
 	public int getId() {
 		return id;
 	}
@@ -113,9 +117,7 @@ public class Estabelecimento {
 		this.fkEndereco = fkEndereco;
 	}
 
-	@ManyToOne
-	@JoinColumn(name = "fk_endereco")
-	private Usuario fkEndereco;
+	
 	
 	
 	
