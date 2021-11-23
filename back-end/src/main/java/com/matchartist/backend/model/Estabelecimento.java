@@ -39,11 +39,11 @@ public class Estabelecimento {
 	
 	@ManyToOne
 	@JoinColumn(name = "fk_status_conta")
-	private Usuario fkStatusConta;
+	private StatusConta fkStatusConta;
 	
 	@ManyToOne
 	@JoinColumn(name = "fk_endereco")
-	private Usuario fkEndereco;
+	private Endereco fkEndereco;
 	
 	public int getId() {
 		return id;
@@ -101,21 +101,23 @@ public class Estabelecimento {
 		this.fkUsuario = fkUsuario;
 	}
 
-	public Usuario getFkStatusConta() {
+	public StatusConta getFkStatusConta() {
 		return fkStatusConta;
 	}
 
-	public void setFkStatusConta(Usuario fkStatusConta) {
+	public void setFkStatusConta(StatusConta fkStatusConta) {
 		this.fkStatusConta = fkStatusConta;
 	}
 
-	public Usuario getFkEndereco() {
+	public Endereco getFkEndereco() {
 		return fkEndereco;
 	}
 
-	public void setFkEndereco(Usuario fkEndereco) {
+	public void setFkEndereco(Endereco fkEndereco) {
 		this.fkEndereco = fkEndereco;
 	}
+
+
 
 	
 	
