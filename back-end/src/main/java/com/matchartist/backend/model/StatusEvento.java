@@ -15,7 +15,7 @@ public class StatusEvento {
 	@Column(name ="id")
 	private int id;
 	
-	@Column(name = "name_status_evento")
+	@Column(name = "nome_status_evento")
 	private String nameStatusEvento;
 
 	public int getId() {
