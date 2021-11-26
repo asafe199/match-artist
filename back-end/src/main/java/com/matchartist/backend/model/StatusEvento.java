@@ -34,6 +34,5 @@ public class StatusEvento {
 		this.nameStatusEvento = nameStatusEvento;
 	}
 	
-	
 
 }
