@@ -16,7 +16,7 @@ foreign key(fk_usuario)references usuario(id)
 
 create table artista(
 id integer auto_increment not null unique,
-uuid integer not null,
+uuid varchar(50),
 nome_artista varchar(200) not null,
 descricao varchar(200),
 url_avatar varchar(300),
