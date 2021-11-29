@@ -11,6 +11,11 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "usuario")
 public class Usuario {
@@ -20,9 +25,11 @@ public class Usuario {
 	@Column(name ="id")
 	private int id;
 	
-	@Column(name = "password")
-	private String password;
 	
+	@Column(name = "password")
+	public String password;
+	
+		
 	@Column(name= "email")
 	private String email;
 	
@@ -51,7 +58,7 @@ public class Usuario {
 		this.id = id;
 	}
 
-	public String getPassword() {
+	public String getPassword() {		
 		return password;
 	}
 
