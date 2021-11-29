@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: match-artist
+  jpa:
+    database: MYSQL
+    hibernate:
+      ddl-auto: update
+  datasource:
+    username: root
+    password: Root@123
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/match_artist2?createDatabaseIfNotExist=true
+  sql:
+    init:
+      data-locations: classpath*:db.migration
+
+server:
+  servlet:
+    context-path: /projeto
+  port: 8080
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+
+
