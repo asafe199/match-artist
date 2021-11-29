@@ -1,35 +1,35 @@
 package com.matchartist.backend.model;
 
-import java.sql.Date;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.hibernate.annotations.ColumnDefault;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Date;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "usuario")
-public class Usuario {
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class Usuario implements UserDetails {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name ="id")
 	private int id;
 	
-	
 	@Column(name = "password")
-	public String password;
+	private String password;
 	
-		
 	@Column(name= "email")
 	private String email;
 	
@@ -58,62 +58,37 @@ public class Usuario {
 		this.id = id;
 	}
 
-	public String getPassword() {		
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		return Collections.emptyList();
+	}
+
+	public String getPassword() {
 		return password;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public String getEmail() {
+	@Override
+	public String getUsername() {
 		return email;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	@Override
+	public boolean isAccountNonExpired() {
+		return true;
 	}
 
-	public Date getDataCriacao() {
-		return dataCriacao;
+	@Override
+	public boolean isAccountNonLocked() {
+		return true;
 	}
 
-	public void setDataCriacao(Date dataCriacao) {
-		this.dataCriacao = dataCriacao;
+	@Override
+	public boolean isCredentialsNonExpired() {
+		return true;
 	}
 
-	public Date getDataAlteracao() {
-		return dataAlteracao;
+	@Override
+	public boolean isEnabled() {
+		return true;
 	}
-
-	public void setDataAlteracao(Date dataAlteracao) {
-		this.dataAlteracao = dataAlteracao;
-	}
-
-	public String getTokenPassword() {
-		return tokenPassword;
-	}
-
-	public void setTokenPassword(String tokenPassword) {
-		this.tokenPassword = tokenPassword;
-	}
-
-	public String getRecoverPassword() {
-		return recoverPassword;
-	}
-
-	public void setRecoverPassword(String recoverPassword) {
-		this.recoverPassword = recoverPassword;
-	}
-
-	public TipoUsuario getTipoUsuario() {
-		return tipoUsuario;
-	}
-
-	public void setTipoUsuario(TipoUsuario tipoUsuario) {
-		this.tipoUsuario = tipoUsuario;
-	}
-	
-	
-
 }
