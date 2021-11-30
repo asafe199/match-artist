@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.matchartist.backend.model.Usuario;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-
+import org.springframework.http.MediaType;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -15,6 +15,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 
 import static com.matchartist.backend.config.Token.*;
 
@@ -23,7 +25,7 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 
 
 	private AuthenticationManager authenticationManager = null;
-	
+
     public JWTAuthenticationFilter(AuthenticationManager auth) {
 		this.authenticationManager = auth;
 	}
@@ -53,6 +55,10 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                 .signWith(SignatureAlgorithm.HS512, SECRET)
                 .compact();
         String bearerToken = BEARER + token;
+        Map<String, Object> map = new HashMap<>();
+        map.put("JWT", bearerToken);
+        response.setContentType(MediaType.APPLICATION_JSON_VALUE);
+        response.getWriter().println(new ObjectMapper().writeValueAsString(map));
         response.addHeader(AUTH, bearerToken);
     }
 }
