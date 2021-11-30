@@ -170,6 +170,8 @@ import { CriarNovoEventoComponent } from "./pages/criar-novo-evento/criar-novo-e
 import { ListarArtistasComponent } from "./pages/listar-artistas/listar-artistas.component";
 import { PropostaDoEstabelecimentoParaOArtistaComponent } from "./pages/proposta-do-estabelecimento-para-o-artista/proposta-do-estabelecimento-para-o-artista.component";
 import { ListarArtistasFavoritosComponent } from "./pages/listar-artistas-favoritos/listar-artistas-favoritos.component";
+import { LoginService } from "./services/login.service";
+import { UsuarioService } from "./services/usuario.service";
 
 FullCalendarModule.registerPlugins([
     dayGridPlugin,
@@ -347,6 +349,8 @@ FullCalendarModule.registerPlugins([
         PhotoService,
         ProductService,
         MenuService,
+        LoginService,
+        UsuarioService
     ],
     bootstrap: [AppComponent],
 })

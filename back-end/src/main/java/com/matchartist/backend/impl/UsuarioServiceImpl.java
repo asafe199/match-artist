@@ -2,7 +2,6 @@ package com.matchartist.backend.impl;
 
 import com.matchartist.backend.model.Usuario;
 import com.matchartist.backend.repository.UsuarioRepository;
-import lombok.AllArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -13,11 +12,15 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-@AllArgsConstructor
 public class UsuarioServiceImpl implements UserDetailsService {
 
     private final UsuarioRepository usuarioRepository;
     private final BCryptPasswordEncoder passwordEncoder;
+    
+    public UsuarioServiceImpl(UsuarioRepository usuario, BCryptPasswordEncoder bcript) {
+    	this.usuarioRepository = usuario;
+    	this.passwordEncoder = bcript;
+    }
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {

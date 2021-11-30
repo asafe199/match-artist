@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.matchartist.backend.model.Usuario;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import lombok.AllArgsConstructor;
+
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -18,12 +18,17 @@ import java.util.Calendar;
 
 import static com.matchartist.backend.config.Token.*;
 
-@AllArgsConstructor
+
 public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
-    private final AuthenticationManager authenticationManager;
 
-    @Override
+	private AuthenticationManager authenticationManager = null;
+	
+    public JWTAuthenticationFilter(AuthenticationManager auth) {
+		this.authenticationManager = auth;
+	}
+
+	@Override
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) {
         try {
             Usuario user = new ObjectMapper().readValue(request.getInputStream(), Usuario.class);

@@ -1,6 +1,8 @@
 import {Component, OnInit} from "@angular/core";
 import {UsuarioService} from "../services/usuario.service";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import { Router } from "@angular/router";
+import { LoginService } from "../services/login.service";
 
 @Component({
     selector: "app-login",
@@ -10,8 +12,9 @@ export class AppLoginComponent implements OnInit{
     formulario: FormGroup;
 
     constructor(
-        private usuarioService: UsuarioService,
+        private usuarioService: LoginService,
         private fb: FormBuilder,
+        private router: Router
     ) {
 
     }
@@ -29,8 +32,11 @@ export class AppLoginComponent implements OnInit{
                 .subscribe(res => {
                         localStorage.setItem('JWT', res.headers.get('Authorization'));
                         console.log(res.headers.get('Authorization'));
+                        this.router.navigate(['/']);
                     },
                         error => {
+                            
+
                     })
         }
     }

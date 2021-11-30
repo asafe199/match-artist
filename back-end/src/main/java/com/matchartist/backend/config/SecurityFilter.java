@@ -1,7 +1,8 @@
 package com.matchartist.backend.config;
 
 import com.matchartist.backend.impl.UsuarioServiceImpl;
-import lombok.AllArgsConstructor;
+
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -10,13 +11,18 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
 
 @EnableWebSecurity
-@AllArgsConstructor
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-public class SecurityFilter extends WebSecurityConfigurerAdapter {
+public class SecurityFilter extends WebSecurityConfigurerAdapter{
 
-    private final UsuarioServiceImpl usuarioService;
+    private UsuarioServiceImpl usuarioService;
+	
+	public SecurityFilter(UsuarioServiceImpl usuario) {
+		super();
+		this.usuarioService = usuario;
+	}
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
@@ -29,7 +35,7 @@ public class SecurityFilter extends WebSecurityConfigurerAdapter {
                 .csrf().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
-                .authorizeRequests().antMatchers("/projeto/usuario").permitAll()
+                .authorizeRequests().antMatchers(HttpMethod.POST, "/usuario").permitAll()
                 .and()
                 .authorizeRequests().antMatchers("/projeto/login").permitAll()
                 .and().authorizeRequests().anyRequest().authenticated()
