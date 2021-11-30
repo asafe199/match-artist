@@ -1,5 +1,4 @@
 import {Component, OnInit} from "@angular/core";
-import {UsuarioService} from "../services/usuario.service";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import { Router } from "@angular/router";
 import { LoginService } from "../services/login.service";
@@ -30,13 +29,12 @@ export class AppLoginComponent implements OnInit{
         if(this.formulario.valid){
             this.usuarioService.login(this.formulario.controls?.email?.value, this.formulario.controls?.password?.value)
                 .subscribe(res => {
-                        localStorage.setItem('JWT', res.headers.get('Authorization'));
-                        console.log(res.headers.get('Authorization'));
+                        localStorage.setItem('JWT', res.JWT);
+                        console.log(res.JWT);
                         this.router.navigate(['/']);
                     },
                         error => {
-                            
-
+                        console.log(error)
                     })
         }
     }
