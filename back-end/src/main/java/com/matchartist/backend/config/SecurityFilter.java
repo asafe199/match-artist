@@ -44,7 +44,8 @@ public class SecurityFilter extends WebSecurityConfigurerAdapter{
                 .authorizeRequests().antMatchers(HttpMethod.POST, "/usuario").permitAll()
                 .and()
                 .authorizeRequests().antMatchers("/projeto/login").permitAll()
-                .and().authorizeRequests().anyRequest().authenticated()
+                .and()
+                .authorizeRequests().anyRequest().authenticated()
                 .and()
                 .addFilterAfter(new BasicAuthFilter(usuarioService), UsernamePasswordAuthenticationFilter.class)
                 .addFilter(new JWTAuthenticationFilter(authenticationManager()));
