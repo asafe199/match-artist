@@ -2,51 +2,28 @@
     <div class="form-cad-artist p-fluid">
         <div class="p-grid p-nogutter">
             <div class="p-col-12">
-                <h3>Cadastro Artista</h3>
+                <h3>Cadastrar Usuário Artista</h3>
                 <span class="p-float-label">
                     <input type="text" pInputText>
-                    <label>Nome Artístico</label>
+                    <label>Nome do Artista</label>
+                </span><br>
+                <span class="p-float-label">
+                    <p-inputMask mask="(99) 99999-9999" [(ngModel)]="val2"></p-inputMask>
+                    <label>Telefone</label>
                 </span><br>
                 <span class="p-float-label">
                     <input type="text" pInputText>
-                    <label>Email</label>
+                    <label>Descrição</label>
                 </span><br>
-                <span class="p-float-label">
-                    <input type="text" pInputText>
-                    <label>Senha</label>
-                </span><br>
-                <span class="p-float-label">
-                    <textarea inputId="textarea" rows="3" cols="30" pInputTextarea></textarea>
-                    <label for="textarea">Descrição do Artista</label>
-                </span><br>
-                <div class="p-field">
-                    <span class="p-float-label">
-                        <p-dropdown inputId="dropdown" optionLabel="name"></p-dropdown>
-                        <label for="dropdown">Gênero Musical</label>
-                    </span>
-                </div>
-                <span class="p-float-label">
-                    <input type="text" pInputText>
-                    <label>Contato</label>
-                </span><br>
-
-                <div class="p-float-label p-grid ">
-                    <span class="p-float-label p-col">
-                        <input type="text" pInputText>
-                        <label>Cidade</label>
-                    </span>
-                    <span class="p-float-label p-col ">
-                        <p-dropdown inputId="dropdown" optionLabel="name"></p-dropdown>
-                        <label for="dropdown">UF</label>
-                    </span>
-                </div><br>
+                
 
                 <div class="text-center button-center">
-                    <p-button label="Cadastrar" class="p-mr-2 p-mb-2"></p-button>
+                    <p-button label="Avançar" class="p-mr-2 p-mb-2"></p-button>
                 </div>
-                <button pButton type="button" onclick="location.href='/#/tipousuario';" label="Voltar"
+                <button pButton type="button" onclick="location.href='/#/CadEndereco';" label="Voltar"
                     class="p-button-link"></button>
             </div>
         </div>
     </div>
 </div>
+

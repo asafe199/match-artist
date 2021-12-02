@@ -17,7 +17,7 @@ export class FloatLabelDemoComponent implements OnInit {
 
     value2: any;
 
-    value3: any;
+    value3: any = '12/01/2021';
 
     value4: any;
 

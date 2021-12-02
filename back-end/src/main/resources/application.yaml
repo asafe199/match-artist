@@ -7,7 +7,7 @@ spring:
       ddl-auto: update
   datasource:
     username: root
-    password: Root@123
+    password: admin
     url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/match_artist2?createDatabaseIfNotExist=true
   sql:
     init:

@@ -57,6 +57,8 @@ import { CriarNovoEventoComponent } from "./pages/criar-novo-evento/criar-novo-e
 import { ListarArtistasComponent } from "./pages/listar-artistas/listar-artistas.component";
 import { PropostaDoEstabelecimentoParaOArtistaComponent } from "./pages/proposta-do-estabelecimento-para-o-artista/proposta-do-estabelecimento-para-o-artista.component";
 import { ListarArtistasFavoritosComponent } from "./pages/listar-artistas-favoritos/listar-artistas-favoritos.component";
+import { CadUsuarioComponent } from "./pages/cad-usuario/cad-usuario.component";
+import { CadEnderecoComponent } from "./pages/cad-endereco/cad-endereco.component";
 
 @NgModule({
     imports: [
@@ -115,6 +117,9 @@ import { ListarArtistasFavoritosComponent } from "./pages/listar-artistas-favori
                             path: "uikit/ListarArtistas",
                             component: ListarArtistasComponent,
                         },
+                        
+
+
                         {
                             path: "uikit/PropostaDoArtistaParaOEstabelecimento",
                             component: PropostaDoEstabelecimentoParaOArtistaComponent,
@@ -218,6 +223,7 @@ import { ListarArtistasFavoritosComponent } from "./pages/listar-artistas-favori
                 { path: "login", component: AppLoginComponent },
                 { path: "tipousuario", component: TipousuarioComponent },
                 { path: "cadArtista", component: CadArtistaComponent },
+                { path: "cadUsuario", component: CadUsuarioComponent },
                 {
                     path: "cadEstabelecimento",
                     component: CadEstabelecimentoComponent,
@@ -229,6 +235,10 @@ import { ListarArtistasFavoritosComponent } from "./pages/listar-artistas-favori
                 {
                     path: "EsqueciMinhaSenha2",
                     component: RecuperarSenha2Component,
+                },
+                {
+                    path: "CadEndereco",
+                    component: CadEnderecoComponent,
                 },
 
                 { path: "**", redirectTo: "/notfound" },

@@ -9,4 +9,7 @@ export class CadArtistaComponent implements OnInit {
     constructor() {}
 
     ngOnInit(): void {}
+
+    val2: string;
+
 }

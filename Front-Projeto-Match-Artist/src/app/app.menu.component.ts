@@ -53,6 +53,12 @@ export class AppMenuComponent implements OnInit {
                         routerLink: ["/cadArtista"],
                     },
                     {
+                        label: "Cadastro Endereco",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["/CadEndereco"],
+                    },
+                   
+                    {
                         label: "EsqueciMinhaSenha",
                         icon: "pi pi-fw pi-id-card",
                         routerLink: ["/EsqueciMinhaSenha"],
@@ -62,6 +68,13 @@ export class AppMenuComponent implements OnInit {
                         icon: "pi pi-fw pi-id-card",
                         routerLink: ["/EsqueciMinhaSenha2"],
                     },
+                    {
+                        label: "CadEndereco",
+                        icon: "pi pi-fw pi-id-card",
+                        routerLink: ["/CadEndereco"],
+                    },
+
+
                     {
                         label: "Solicitar do Artista para o Evento",
                         icon: "pi pi-fw pi-id-card",

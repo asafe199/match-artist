@@ -172,6 +172,8 @@ import { PropostaDoEstabelecimentoParaOArtistaComponent } from "./pages/proposta
 import { ListarArtistasFavoritosComponent } from "./pages/listar-artistas-favoritos/listar-artistas-favoritos.component";
 import { LoginService } from "./services/login.service";
 import { UsuarioService } from "./services/usuario.service";
+import { CadUsuarioComponent } from './pages/cad-usuario/cad-usuario.component';
+import { CadEnderecoComponent } from './pages/cad-endereco/cad-endereco.component';
 
 FullCalendarModule.registerPlugins([
     dayGridPlugin,
@@ -338,6 +340,8 @@ FullCalendarModule.registerPlugins([
         ListarArtistasComponent,
         PropostaDoEstabelecimentoParaOArtistaComponent,
         ListarArtistasFavoritosComponent,
+        CadUsuarioComponent,
+        CadEnderecoComponent,
     ],
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },
