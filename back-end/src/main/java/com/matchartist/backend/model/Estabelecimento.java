@@ -7,7 +7,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -28,7 +27,7 @@ public class Estabelecimento {
 	private String urlAvatar;
 	
 	@Column(name = "contato")
-	private int contato;
+	private String contato;
 	
 	@Column(name = "descricao")
 	private String descricao;
@@ -77,11 +76,11 @@ public class Estabelecimento {
 		this.urlAvatar = urlAvatar;
 	}
 
-	public int getContato() {
+	public String getContato() {
 		return contato;
 	}
 
-	public void setContato(int contato) {
+	public void setContato(String contato) {
 		this.contato = contato;
 	}
 

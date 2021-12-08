@@ -1,13 +1,6 @@
 package com.matchartist.backend.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table( name ="artista")
@@ -31,9 +24,9 @@ public class Artista {
 	private String urlAvatar;
 	
 	@Column(name = "contato")
-	private int contato;
+	private String contato;
 	
-	@ManyToOne
+	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "fk_usuario")
 	private Usuario fkUsuario;
 	
@@ -41,7 +34,7 @@ public class Artista {
 	@JoinColumn(name = "fk_status_conta")
 	private StatusConta fkStatusConta;
 	
-	@ManyToOne
+	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "fk_endereco")
 	private Endereco fkEndereco;
 	
@@ -85,14 +78,6 @@ public class Artista {
 		this.urlAvatar = urlAvatar;
 	}
 
-	public int getContato() {
-		return contato;
-	}
-
-	public void setContato(int contato) {
-		this.contato = contato;
-	}
-
 	public Usuario getFkUsuario() {
 		return fkUsuario;
 	}
@@ -116,6 +101,12 @@ public class Artista {
 	public void setFkEndereco(Endereco fkEndereco) {
 		this.fkEndereco = fkEndereco;
 	}
-	
-	
+
+	public String getContato() {
+		return contato;
+	}
+
+	public void setContato(String contato) {
+		this.contato = contato;
+	}
 }

@@ -1,9 +1,6 @@
 package com.matchartist.backend.resource;
 
-import java.net.URI;
 import java.util.List;
-
-import javax.servlet.http.HttpServletResponse;
 
 import com.matchartist.backend.bean.UsuarioBean;
 import com.matchartist.backend.impl.UsuarioServiceImpl;
@@ -36,7 +33,7 @@ public class UsuarioResource {
 	
 	
 	@PostMapping("/usuario")
-	public ResponseEntity<Usuario> criar(@RequestBody UsuarioBean usuario, HttpServletResponse response) {
+	public ResponseEntity<Usuario> criar(@RequestBody UsuarioBean usuario) {
 		Usuario usuarioSalvo = usuarioRepository.saveUsuario(usuario);
 		usuarioSalvo.setPassword(null);
 		return ResponseEntity.ok(usuarioSalvo);
