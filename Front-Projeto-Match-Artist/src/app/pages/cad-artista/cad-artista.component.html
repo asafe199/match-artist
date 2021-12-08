@@ -14,7 +14,7 @@
                 </span><br>
                 <div class="p-field">
                     <span class="p-float-label">
-                        <p-dropdown [options]="tipoUsuario" [(ngModel)]="tipo" placeholder="Tipo de Usuario" optionLabel="desc" [showClear]="true" formControlName="tipoUsuario">
+                        <p-dropdown [options]="tipoUsuario" [(ngModel)]="tipo" (onChange)="disableButton()" placeholder="Tipo de Usuario" optionLabel="desc" [showClear]="true" formControlName="tipoUsuario">
                         </p-dropdown>
                     </span>
                 </div>
@@ -26,16 +26,28 @@
                     <label>Nome Artista</label>
                 </span><br>
                 <span class="p-float-label">
-                    <input type="text" pInputText formControlName="desc">
+                    <input type="text" pInputText formControlName="descArtista">
                     <label>Descrição</label>
                 </span><br>
                 <span class="p-float-label">
-                    <input type="number" pInputText formControlName="contato">
+                    <input type="number" pInputText formControlName="contatoArtista">
                     <label>Contato</label>
                 </span><br>
                 <br>
                 <mat-divider></mat-divider>
                 <br>
+                <span class="p-float-label">
+                    <input type="text" pInputText formControlName="nomeEstab">
+                    <label>Nome Estabelecimento</label>
+                </span><br>
+                <span class="p-float-label">
+                    <input type="text" pInputText formControlName="descEstab">
+                    <label>Descrição Estabelecimento</label>
+                </span><br>
+                <span class="p-float-label">
+                    <input type="number" pInputText formControlName="contatoEstab">
+                    <label>Contato Estabelecimento</label>
+                </span><br>
                 <div class="text-center button-center">
                     <p-button label="Cadastrar" class="p-mr-2 p-mb-2" (onClick)="enviar()">
                     </p-button>
