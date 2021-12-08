@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletResponse;
 
+import com.matchartist.backend.bean.UsuarioBean;
 import com.matchartist.backend.impl.UsuarioServiceImpl;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.matchartist.backend.model.Usuario;
 
@@ -36,14 +36,10 @@ public class UsuarioResource {
 	
 	
 	@PostMapping("/usuario")
-	public ResponseEntity<Usuario> criar(@RequestBody Usuario usuario, HttpServletResponse response) {
+	public ResponseEntity<Usuario> criar(@RequestBody UsuarioBean usuario, HttpServletResponse response) {
 		Usuario usuarioSalvo = usuarioRepository.saveUsuario(usuario);
-		
-		URI uri = ServletUriComponentsBuilder.fromCurrentRequestUri().path("/{codigo}")
-			.buildAndExpand(usuarioSalvo.getId()).toUri();
-		response.setHeader("Location", uri.toASCIIString());
 		usuarioSalvo.setPassword(null);
-		return ResponseEntity.created(uri).body(usuarioSalvo);
+		return ResponseEntity.ok(usuarioSalvo);
 	}
 
 }
