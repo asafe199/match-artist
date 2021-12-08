@@ -5,6 +5,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HashLocationStrategy, LocationStrategy } from "@angular/common";
 import { AppRoutingModule } from "./app-routing.module";
+import {MatSelectModule} from '@angular/material/select';
 
 // PrimeNG Components for demos
 import { AccordionModule } from "primeng/accordion";
@@ -172,6 +173,7 @@ import { PropostaDoEstabelecimentoParaOArtistaComponent } from "./pages/proposta
 import { ListarArtistasFavoritosComponent } from "./pages/listar-artistas-favoritos/listar-artistas-favoritos.component";
 import { LoginService } from "./services/login.service";
 import { UsuarioService } from "./services/usuario.service";
+import {MatDividerModule} from "@angular/material/divider";
 
 FullCalendarModule.registerPlugins([
     dayGridPlugin,
@@ -184,6 +186,7 @@ FullCalendarModule.registerPlugins([
         BrowserModule,
         FormsModule,
         AppRoutingModule,
+        MatSelectModule,
         HttpClientModule,
         BrowserAnimationsModule,
         AccordionModule,
@@ -267,6 +270,7 @@ FullCalendarModule.registerPlugins([
         VirtualScrollerModule,
         AppCodeModule,
         ReactiveFormsModule,
+        MatDividerModule,
     ],
     declarations: [
         AppComponent,

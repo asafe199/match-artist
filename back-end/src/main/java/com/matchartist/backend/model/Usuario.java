@@ -1,10 +1,5 @@
 package com.matchartist.backend.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import org.hibernate.annotations.ColumnDefault;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -17,8 +12,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "usuario")
 public class Usuario implements UserDetails {
-
-	
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

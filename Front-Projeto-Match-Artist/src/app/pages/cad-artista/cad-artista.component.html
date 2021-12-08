@@ -1,52 +1,48 @@
 <div class="login-body">
+    <form [formGroup]="formulario" novalidate>
     <div class="form-cad-artist p-fluid">
         <div class="p-grid p-nogutter">
             <div class="p-col-12">
                 <h3>Cadastro Artista</h3>
                 <span class="p-float-label">
-                    <input type="text" pInputText>
-                    <label>Nome Artístico</label>
-                </span><br>
-                <span class="p-float-label">
-                    <input type="text" pInputText>
+                    <input type="text" pInputText formControlName="email">
                     <label>Email</label>
                 </span><br>
                 <span class="p-float-label">
-                    <input type="text" pInputText>
+                    <input type="text" pInputText formControlName="senha">
                     <label>Senha</label>
-                </span><br>
-                <span class="p-float-label">
-                    <textarea inputId="textarea" rows="3" cols="30" pInputTextarea></textarea>
-                    <label for="textarea">Descrição do Artista</label>
                 </span><br>
                 <div class="p-field">
                     <span class="p-float-label">
-                        <p-dropdown inputId="dropdown" optionLabel="name"></p-dropdown>
-                        <label for="dropdown">Gênero Musical</label>
+                        <p-dropdown [options]="tipoUsuario" [(ngModel)]="tipo" placeholder="Tipo de Usuario" optionLabel="desc" [showClear]="true" formControlName="tipoUsuario">
+                        </p-dropdown>
                     </span>
                 </div>
+                <br>
+                <mat-divider></mat-divider>
+                <br>
                 <span class="p-float-label">
-                    <input type="text" pInputText>
+                    <input type="text" pInputText formControlName="nomeArtista">
+                    <label>Nome Artista</label>
+                </span><br>
+                <span class="p-float-label">
+                    <input type="text" pInputText formControlName="desc">
+                    <label>Descrição</label>
+                </span><br>
+                <span class="p-float-label">
+                    <input type="number" pInputText formControlName="contato">
                     <label>Contato</label>
                 </span><br>
-
-                <div class="p-float-label p-grid ">
-                    <span class="p-float-label p-col">
-                        <input type="text" pInputText>
-                        <label>Cidade</label>
-                    </span>
-                    <span class="p-float-label p-col ">
-                        <p-dropdown inputId="dropdown" optionLabel="name"></p-dropdown>
-                        <label for="dropdown">UF</label>
-                    </span>
-                </div><br>
-
+                <br>
+                <mat-divider></mat-divider>
+                <br>
                 <div class="text-center button-center">
-                    <p-button label="Cadastrar" class="p-mr-2 p-mb-2"></p-button>
+                    <p-button label="Cadastrar" class="p-mr-2 p-mb-2" (onClick)="enviar()">
+                    </p-button>
                 </div>
-                <button pButton type="button" onclick="location.href='/#/tipousuario';" label="Voltar"
-                    class="p-button-link"></button>
+                <button pButton type="button" onclick="location.href='/#/tipousuario';" label="Voltar" class="p-button-link"></button>
             </div>
         </div>
     </div>
+    </form>
 </div>
