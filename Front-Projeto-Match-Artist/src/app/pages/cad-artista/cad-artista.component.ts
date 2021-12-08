@@ -66,7 +66,7 @@ export class CadArtistaComponent implements OnInit {
             };
             this.usuarioService.add(usuario).subscribe(res => {
                 console.log(res);
-                this.router.navigate(["/main"]);
+                this.router.navigate(["/"]);
             }, err => {
                 console.log(err);
             })

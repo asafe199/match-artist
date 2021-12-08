@@ -31,7 +31,7 @@ export class AppLoginComponent implements OnInit{
                 .subscribe(res => {
                         localStorage.setItem('JWT', res.JWT);
                         console.log(res.JWT);
-                        this.router.navigate(['/main']);
+                        this.router.navigate(['/']);
                     },
                         error => {
                         console.log(error)
